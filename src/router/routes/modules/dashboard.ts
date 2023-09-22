@@ -26,13 +26,13 @@ const dashboard: AppRouteModule = {
 
        {
           path: 'homeless',
-          name: 'Homeless',
-         component: () => import('/@/views/dashboard/analysis/account/center/status.vue'),
+          name: 'Roadmap',
+          component: () => import('/@/views/dashboard/analysis/account/center/status.vue'),
            // component: () => import('/@/views/dashboard/workbench-1/index.vue'),
 
           meta: {
             // affix: true,
-//             title: t('Homeless detail'),
+             title: t('Roadmap'),
           },
         },
   ],

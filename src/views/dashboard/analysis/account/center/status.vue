@@ -23,11 +23,14 @@
           <a-layout-content :style="contentStyle">
 
             <a-descriptions>
-              <a-descriptions-item label="Name">John</a-descriptions-item>
-              <a-descriptions-item label="Telephone">+1 1***2135</a-descriptions-item>
+
+              <a-descriptions-item label="Name"> John Barry</a-descriptions-item>
+              <a/>
+              <a-descriptions-item label="Telephone">+1 23***2135</a-descriptions-item>
             </a-descriptions>
             <a-descriptions>
-              <a-descriptions-item label="Requirement">Job Skills, Healthy Treatment</a-descriptions-item>
+              <a-descriptions-item label="Requirement">Job Skills, Healthy Treatment </a-descriptions-item>
+              <a/>
               <a-descriptions-item label="Join Date">2016-10-24</a-descriptions-item>
             </a-descriptions>
             <a-descriptions>
@@ -44,15 +47,20 @@
                 '0%': '#108ee9',
                 '100%': '#87d068',
               }"
-              :percent="100"
+              :percent="1"
             />
           </a-layout-sider>
         </a-layout>
         <a-layout-footer :style="footerStyle">
 
+          cp  public/favicon.ico  ../new/tsc-web/public
+          cp  public/logo.png  ../new/tsc-web/public/logo.png
+          cp  src/assets/images/logo.png  ../new/tsc-web/src/assets/images/logo.png
+          cp  src/router/routes/modules/dashboard.ts  ../new/tsc-web/src/router/routes/modules/dashboard.ts
+          cp  src/views/dashboard/analysis/account/center/status.vue  ../new/tsc-web/src/views/dashboard/analysis/account/center/status.vue
+          cp  src/views/dashboard/analysis/account/center/test  ../new/tsc-web/src/views/dashboard/analysis/account/center/test
 
-
-          <Steps :current="3" progress-dot size="large">
+          <Steps :current="0" progress-dot size="large">
             <Step title="Join">
               <template #description>
                 <p>2016-10-24 12:32</p>
@@ -60,21 +68,21 @@
             </Step>
             <Step title="Job Training">
               <template #description>
-                <p>2016-11-22 12:32</p>
-<!--                <p>Planned</p>-->
+<!--                <p>2016-11-22 12:32</p>-->
+                <p>Planned</p>
 
               </template>
             </Step>
             <Step title="Health" >
               <template #description>
-                <p>2017-01-26 15:30</p>
+<!--                <p>2017-01-26 15:30</p>-->
                <p>Planned</p>
 
               </template>
             </Step>
             <Step title="Completed" >
               <template #description>
-                <p>2017-05-25 15:30</p>
+<!--                <p>2017-05-25 15:30</p>-->
               </template>
             </Step>
           </Steps>
@@ -90,131 +98,131 @@
 
 
 <!--comments-->
-    <a-comment>
-      <template #actions>
-        <span key="comment-nested-reply-to">Reply to</span>
-      </template>
-      <template #author>
-        <a>Johns</a>
-      </template>
-      <template #avatar>
-        <a-avatar src="https://tse3-mm.cn.bing.net/th/id/OIP-C.oIy82pW7avvLJcWByN5X1AAAAA?pid=ImgDet&rs=1" alt="John" />
-      </template>
-      <template #content>
-        <p>
-         I will never forget today in my life! i Got my home today! I feel really graceful. Thanks everyone who ever helped me! I never thought i could really got my own house! I could't get it withour your help! Thanks everyone!(From cellphone on 20170525)
-        </p>
-      </template>
-      <a-comment>
-        <template #author>
-          <a>Delaware Heathy Center</a>
-        </template>
-        <template #avatar>
-          <a-avatar src="https://ts1.cn.mm.bing.net/th/id/R-C.8909256c2f78c2ff828ceae7f28009ca?rik=T4TXSMZNXASm3Q&pid=ImgRaw&r=0" alt="Jxy" />
-        </template>
-        <template #content>
-          <p>
-            <a>@John</a>,<a>@TSC staff</a>, just a reminder that john need to come to our hospital for the treatment on 20170130(From PC on 20170126)
-          </p>
-        </template>
-        <a-comment>
-          <template #actions>
-            <span>Reply to</span>
-          </template>
-          <template #author>
-            <a>TSC Staff</a>
-          </template>
-          <template #avatar>
-            <a-avatar src="https://ts1.cn.mm.bing.net/th/id/R-C.d04ab4b23b2e4b577f28bb38a5cdaf4e?rik=oV4iTAagIbE2CA&pid=ImgRaw&r=0" alt="Han Solo" />
-          </template>
-          <template #content>
-            <p>
-              Confirmed. (From cellphone on 20171126)
-            </p>
-          </template>
-        </a-comment>
-        <a-comment>
-          <template #actions>
-            <span>Reply to</span>
-          </template>
-          <template #author>
-            <a>John</a>
-          </template>
-          <template #avatar>
-            <a-avatar src="https://tse3-mm.cn.bing.net/th/id/OIP-C.oIy82pW7avvLJcWByN5X1AAAAA?pid=ImgDet&rs=1" alt="Han Solo" />
-          </template>
-          <template #content>
-            <p>
-              Confirmed. (From cellphone on 201711126)
-            </p>
-          </template>
+<!--    <a-comment>-->
+<!--      <template #actions>-->
+<!--        <span key="comment-nested-reply-to">Reply to</span>-->
+<!--      </template>-->
+<!--      <template #author>-->
+<!--        <a>Johns</a>-->
+<!--      </template>-->
+<!--      <template #avatar>-->
+<!--        <a-avatar src="https://tse3-mm.cn.bing.net/th/id/OIP-C.oIy82pW7avvLJcWByN5X1AAAAA?pid=ImgDet&rs=1" alt="John" />-->
+<!--      </template>-->
+<!--      <template #content>-->
+<!--        <p>-->
+<!--         I will never forget today in my life! i Got my home today! I feel really graceful. Thanks everyone who ever helped me! I never thought i could really got my own house! I could't get it withour your help! Thanks everyone!(From cellphone on 20170525)-->
+<!--        </p>-->
+<!--      </template>-->
+<!--      <a-comment>-->
+<!--        <template #author>-->
+<!--          <a>Delaware Heathy Center</a>-->
+<!--        </template>-->
+<!--        <template #avatar>-->
+<!--          <a-avatar src="https://ts1.cn.mm.bing.net/th/id/R-C.8909256c2f78c2ff828ceae7f28009ca?rik=T4TXSMZNXASm3Q&pid=ImgRaw&r=0" alt="Jxy" />-->
+<!--        </template>-->
+<!--        <template #content>-->
+<!--          <p>-->
+<!--            <a>@John</a>,<a>@TSC staff</a>, just a reminder that john need to come to our hospital for the treatment on 20170130(From PC on 20170126)-->
+<!--          </p>-->
+<!--        </template>-->
+<!--        <a-comment>-->
+<!--          <template #actions>-->
+<!--            <span>Reply to</span>-->
+<!--          </template>-->
+<!--          <template #author>-->
+<!--            <a>TSC Staff</a>-->
+<!--          </template>-->
+<!--          <template #avatar>-->
+<!--            <a-avatar src="https://ts1.cn.mm.bing.net/th/id/R-C.d04ab4b23b2e4b577f28bb38a5cdaf4e?rik=oV4iTAagIbE2CA&pid=ImgRaw&r=0" alt="Han Solo" />-->
+<!--          </template>-->
+<!--          <template #content>-->
+<!--            <p>-->
+<!--              Confirmed. (From cellphone on 20171126)-->
+<!--            </p>-->
+<!--          </template>-->
+<!--        </a-comment>-->
+<!--        <a-comment>-->
+<!--          <template #actions>-->
+<!--            <span>Reply to</span>-->
+<!--          </template>-->
+<!--          <template #author>-->
+<!--            <a>John</a>-->
+<!--          </template>-->
+<!--          <template #avatar>-->
+<!--            <a-avatar src="https://tse3-mm.cn.bing.net/th/id/OIP-C.oIy82pW7avvLJcWByN5X1AAAAA?pid=ImgDet&rs=1" alt="Han Solo" />-->
+<!--          </template>-->
+<!--          <template #content>-->
+<!--            <p>-->
+<!--              Confirmed. (From cellphone on 201711126)-->
+<!--            </p>-->
+<!--          </template>-->
 
-        </a-comment>
-      </a-comment>
-    </a-comment>
+<!--        </a-comment>-->
+<!--      </a-comment>-->
+<!--    </a-comment>-->
 <!--3 end-->
 <!-- 2 -->
-    <a-comment>
-      <template #actions>
-        <span key="comment-nested-reply-to">Reply to</span>
-      </template>
-      <template #author>
-        <a>Johns</a>
-      </template>
-      <template #avatar>
-        <a-avatar src="https://tse3-mm.cn.bing.net/th/id/OIP-C.oIy82pW7avvLJcWByN5X1AAAAA?pid=ImgDet&rs=1" alt="John" />
-      </template>
-      <template #content>
-        <p>
-          <a>@Delawre job Center</a>. I feel really appreciated for this skill training. It's very helpful. Thanks a lot!(From PC on 20161122)
-        </p>
-      </template>
-      <a-comment>
-        <template #author>
-          <a>Delawre job Center</a>
-        </template>
-        <template #avatar>
-          <a-avatar src="https://ts1.cn.mm.bing.net/th/id/R-C.420bc87022ea8ed31390a6248ccbd08c?rik=T8D%2fAKulu58QmA&pid=ImgRaw&r=0" alt="Jxy" />
-        </template>
-        <template #content>
-          <p>
-            <a>@John</a>,<a>@TSC staff</a>, As just spoke in the call. Please make sure you attended the skill training on next Monday Nov 21st. (From PC on 20161115)          </p>
-        </template>
-                <a-comment>
-                  <template #actions>
-                    <span>Reply to</span>
-                  </template>
-                  <template #author>
-                    <a>TSC Staff</a>
-                  </template>
-                  <template #avatar>
-                    <a-avatar src="https://ts1.cn.mm.bing.net/th/id/R-C.d04ab4b23b2e4b577f28bb38a5cdaf4e?rik=oV4iTAagIbE2CA&pid=ImgRaw&r=0" alt="Han Solo" />
-                  </template>
-                  <template #content>
-                    <p>
-                      Confirmed. (From cellphone on 20161115)
-                    </p>
-                  </template>
-                </a-comment>
-                <a-comment>
-                  <template #actions>
-                    <span>Reply to</span>
-                  </template>
-                  <template #author>
-                    <a>John</a>
-                  </template>
-                  <template #avatar>
-                    <a-avatar src="https://tse3-mm.cn.bing.net/th/id/OIP-C.oIy82pW7avvLJcWByN5X1AAAAA?pid=ImgDet&rs=1" alt="Han Solo" />
-                  </template>
-                  <template #content>
-                    <p>
-                      Confirmed. (From cellphone on 20161115)
-                    </p>
-                  </template>
+<!--    <a-comment>-->
+<!--      <template #actions>-->
+<!--        <span key="comment-nested-reply-to">Reply to</span>-->
+<!--      </template>-->
+<!--      <template #author>-->
+<!--        <a>Johns</a>-->
+<!--      </template>-->
+<!--      <template #avatar>-->
+<!--        <a-avatar src="https://tse3-mm.cn.bing.net/th/id/OIP-C.oIy82pW7avvLJcWByN5X1AAAAA?pid=ImgDet&rs=1" alt="John" />-->
+<!--      </template>-->
+<!--      <template #content>-->
+<!--        <p>-->
+<!--          <a>@Delawre job Center</a>. I feel really appreciated for this skill training. It's very helpful. Thanks a lot!(From PC on 20161122)-->
+<!--        </p>-->
+<!--      </template>-->
+<!--      <a-comment>-->
+<!--        <template #author>-->
+<!--          <a>Delawre job Center</a>-->
+<!--        </template>-->
+<!--        <template #avatar>-->
+<!--          <a-avatar src="https://ts1.cn.mm.bing.net/th/id/R-C.420bc87022ea8ed31390a6248ccbd08c?rik=T8D%2fAKulu58QmA&pid=ImgRaw&r=0" alt="Jxy" />-->
+<!--        </template>-->
+<!--        <template #content>-->
+<!--          <p>-->
+<!--            <a>@John</a>,<a>@TSC staff</a>, As just spoke in the call. Please make sure you attended the skill training on next Monday Nov 21st. (From PC on 20161115)          </p>-->
+<!--        </template>-->
+<!--                <a-comment>-->
+<!--                  <template #actions>-->
+<!--                    <span>Reply to</span>-->
+<!--                  </template>-->
+<!--                  <template #author>-->
+<!--                    <a>TSC Staff</a>-->
+<!--                  </template>-->
+<!--                  <template #avatar>-->
+<!--                    <a-avatar src="https://ts1.cn.mm.bing.net/th/id/R-C.d04ab4b23b2e4b577f28bb38a5cdaf4e?rik=oV4iTAagIbE2CA&pid=ImgRaw&r=0" alt="Han Solo" />-->
+<!--                  </template>-->
+<!--                  <template #content>-->
+<!--                    <p>-->
+<!--                      Confirmed. (From cellphone on 20161115)-->
+<!--                    </p>-->
+<!--                  </template>-->
+<!--                </a-comment>-->
+<!--                <a-comment>-->
+<!--                  <template #actions>-->
+<!--                    <span>Reply to</span>-->
+<!--                  </template>-->
+<!--                  <template #author>-->
+<!--                    <a>John</a>-->
+<!--                  </template>-->
+<!--                  <template #avatar>-->
+<!--                    <a-avatar src="https://tse3-mm.cn.bing.net/th/id/OIP-C.oIy82pW7avvLJcWByN5X1AAAAA?pid=ImgDet&rs=1" alt="Han Solo" />-->
+<!--                  </template>-->
+<!--                  <template #content>-->
+<!--                    <p>-->
+<!--                      Confirmed. (From cellphone on 20161115)-->
+<!--                    </p>-->
+<!--                  </template>-->
 
-                </a-comment>
-      </a-comment>
-    </a-comment>
+<!--                </a-comment>-->
+<!--      </a-comment>-->
+<!--    </a-comment>-->
 <!--2 end -->
 
     <a-comment >
@@ -256,7 +264,7 @@
   import { defineComponent } from 'vue';
   import { Result, Steps, Descriptions } from 'ant-design-vue';
   import 'ant-design-vue/dist/reset.css';
-
+  import  UserOutlined from  '@ant-design/icons-vue';
   const Step = Steps.Step;
   const Item = Descriptions.Item;
 
