@@ -47,7 +47,7 @@
                 '0%': '#108ee9',
                 '100%': '#87d068',
               }"
-              :percent="33"
+              :percent="1"
             />
           </a-layout-sider>
         </a-layout>

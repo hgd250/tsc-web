@@ -15,11 +15,11 @@ const homeless: AppRouteModule = {
   children: [
     {
       path: 'homeless',
-      name: 'Homeless Managemen',
+      name: 'Homeless Management',
       component: () => import('/@/views/dashboard/homeless/HomelessMMTable.vue'),
       meta: {
         // affix: true,
-        title: t('routes.demo.managerment.homeless'),
+        title: t('Homeless Management'),
       },
     },
     {
@@ -40,7 +40,7 @@ const homeless: AppRouteModule = {
       title: t('Navigator Managemen'),
     },
   },
-      {
+    /*  {
       path: 'import',
       name: 'Import History Data',
     component: () => import('/@/views/dashboard/homeless/index.vue'),
@@ -49,7 +49,7 @@ const homeless: AppRouteModule = {
         title: t('Import History Data'),
       },
 
-      },
+      },*/
   ],
 };
 

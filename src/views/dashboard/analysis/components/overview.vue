@@ -68,7 +68,7 @@ defaultEdge: {
   },
   defaultNode: {
     type: 'donut',
-    size: 50,
+    size: 75,
     style: {
     fill: 'steelblue' ,
     stroke: '#EBF2FF',
