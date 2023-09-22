@@ -48,6 +48,7 @@
     </div>
 
     <Drawer4 @register="register4" />
+
   </PageWrapper>
 </template>
 <script lang="ts">

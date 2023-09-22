@@ -4,7 +4,7 @@
       <BasicForm @register="registerForm" />
     </div>
     <div>
-        <a-button type="primary" @click="submitAll"> Submit </a-button>
+        <a-button type="primary" @click="closeDrawer"> Submit </a-button>
     </div>
   </BasicDrawer>
 </template>
@@ -14,6 +14,9 @@
   import { BasicDrawer, useDrawerInner } from '/@/components/Drawer';
 
   import { BasicForm, FormSchema, useForm } from '/@/components/Form/index';
+  import { message } from 'ant-design-vue';
+
+
   const schemas: FormSchema[] = [
     {
       field: 'Organization',
@@ -109,6 +112,7 @@
 
   ];
   export default defineComponent({
+
     components: { BasicDrawer, BasicForm },
 
     setup() {
@@ -121,7 +125,7 @@
         },
       });
 
-      const [register] = useDrawerInner((data) => {
+      const [register, { closeDrawer }]  = useDrawerInner((data) => {
         // 方式1
         setFieldsValue({
           field2: data.data,
@@ -129,7 +133,7 @@
         });
       });
 
-      return { register, schemas, registerForm };
+      return { register, closeDrawer, schemas, registerForm };
     },
   });
 </script>
