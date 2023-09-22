@@ -8,7 +8,7 @@
     <div class="flex flex-1 justify-end md:mt-0 mt-4">
       <div class="flex flex-col justify-center text-right">
         <span class="text-secondary"> In Process </span>
-        <span class="text-3xl">10</span>
+        <span class="text-3xl">3</span>
       </div>
 
       <div class="flex flex-col justify-center text-right md:mx-16 mx-12">
@@ -17,7 +17,7 @@
       </div>
       <div class="flex flex-col justify-center text-right md:mr-10 mr-4">
         <span class="text-secondary"> Total </span>
-        <span class="text-3xl">18</span>
+        <span class="text-3xl">11</span>
       </div>
     </div>
   </div>

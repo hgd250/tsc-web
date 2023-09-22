@@ -4,15 +4,15 @@
       <a-row :gutter="12">
         <a-col :span="8" :class="`${prefixCls}__top-col`">
           <div>Pending</div>
-          <p>8</p>
+          <p>3</p>
         </a-col>
         <a-col :span="8" :class="`${prefixCls}__top-col`">
           <div>Average Time</div>
-          <p>32 Days</p>
+          <p>3 Month</p>
         </a-col>
         <a-col :span="8" :class="`${prefixCls}__top-col`">
           <div>Completed</div>
-          <p>24</p>
+          <p>8</p>
         </a-col>
       </a-row>
     </div>
