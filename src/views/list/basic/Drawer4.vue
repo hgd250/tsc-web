@@ -1,15 +1,14 @@
 <template>
-  <BasicDrawer v-bind="$attrs" @register="register" title="Assign Origination" width="50%">
+  <BasicDrawer v-bind="$attrs" @register="register" title="Assign Organization" width="50%">
     <div>
       <BasicForm @register="registerForm" />
     </div>
     <div>
-        <a-button type="primary" @click="submitAll"> 提交 </a-button>
+        <a-button type="primary" @click="submitAll"> Submit </a-button>
     </div>
-
   </BasicDrawer>
-
 </template>
+
 <script lang="ts">
   import { defineComponent } from 'vue';
   import { BasicDrawer, useDrawerInner } from '/@/components/Drawer';
@@ -17,9 +16,9 @@
   import { BasicForm, FormSchema, useForm } from '/@/components/Form/index';
   const schemas: FormSchema[] = [
     {
-      field: 'Origination',
+      field: 'Organization',
       component: 'Select',
-      label: 'Origination',
+      label: 'Organization',
       colProps: {
         span: 24,
       },
@@ -27,13 +26,37 @@
       mode: 'multiple',
           options: [
             {
-              label: 'Citi1',
-              value: '1',
+              label: 'Hospital of Delaware',
+              value: '1'
             },
             {
-              label: 'citi2',
-              value: '2',
+              label: 'Google',
+              value: '2'
             },
+            {
+              label: 'Amazon',
+              value: '3'
+            },
+            {
+              label: 'Delaware Healthcare Association',
+              value: '4'
+            },
+            {
+              label: 'Addiction Treatment Center',
+              value: '5'
+            },
+            {
+              label: 'Apple',
+              value: '6'
+            },
+            {
+              label: 'Microsoft',
+              value: '7'
+            },
+            {
+              label: 'IBM',
+              value: '8'
+            }
           ],
         },
     },
@@ -48,24 +71,24 @@
       mode: 'multiple',
           options: [
             {
-              label: 'Health',
-              value: '1',
-            },
-            {
-              label: 'Job',
-              value: '2',
-            },
-            {
               label: 'Training',
-              value: '3',
+              value: '1'
             },
             {
-              label: 'Money',
-              value: '4',
+              label: 'Education',
+              value: '2'
             },
             {
-              label: 'Others',
-              value: '5',
+              label: 'Healthcare',
+              value: '3'
+            },
+            {
+              label: 'Addiction Treatment',
+              value: '4'
+            },
+            {
+              label: 'Provide Job',
+              value: '5'
             },
           ],
         },
@@ -87,6 +110,7 @@
   ];
   export default defineComponent({
     components: { BasicDrawer, BasicForm },
+
     setup() {
       const [registerForm, { setFieldsValue }] = useForm({
         labelWidth: 120,
@@ -96,6 +120,7 @@
           span: 24,
         },
       });
+
       const [register] = useDrawerInner((data) => {
         // 方式1
         setFieldsValue({
@@ -103,6 +128,7 @@
           field1: data.info,
         });
       });
+
       return { register, schemas, registerForm };
     },
   });
