@@ -12,7 +12,7 @@
         <Card class="!my-4 enter-y" :loading="loading">
           <img class="xl:h-50 h-30 mx-auto" src="../../../assets/svg/illustration.svg" />
         </Card>
-      <SaleRadar/>
+<!--      <SaleRadar/>-->
       </div>
     </div>
   </PageWrapper>
@@ -24,7 +24,7 @@
   import WorkbenchHeader from './components/WorkbenchHeader.vue';
   import QuickNav from './components/QuickNav.vue';
   import TaskTable from  '/@/views/list/card/index.vue'
-  import SaleRadar from './components/SaleRadar.vue'
+  // import SaleRadar from './components/SaleRadar.vue'
 
   const loading = ref(true);
 

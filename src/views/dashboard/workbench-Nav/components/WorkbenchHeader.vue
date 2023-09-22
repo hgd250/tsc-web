@@ -13,11 +13,11 @@
 
       <div class="flex flex-col justify-center text-right md:mx-16 mx-12">
         <span class="text-secondary"> Completed </span>
-        <span class="text-3xl">8</span>
+        <span class="text-3xl">10</span>
       </div>
       <div class="flex flex-col justify-center text-right md:mr-10 mr-4">
         <span class="text-secondary"> Total </span>
-        <span class="text-3xl">11</span>
+        <span class="text-3xl">13</span>
       </div>
     </div>
   </div>
