@@ -4,7 +4,7 @@
       <BasicForm @register="registerForm" />
     </div>
     <div>
-        <a-button type="primary" @click="closeDrawer"> Submit </a-button>
+        <a-button type="primary" @click="success"> Submit </a-button>
     </div>
   </BasicDrawer>
 </template>
@@ -14,7 +14,8 @@
   import { BasicDrawer, useDrawerInner } from '/@/components/Drawer';
 
   import { BasicForm, FormSchema, useForm } from '/@/components/Form/index';
-  import { message } from 'ant-design-vue';
+import { message } from 'ant-design-vue';
+
 
 
   const schemas: FormSchema[] = [
@@ -116,6 +117,8 @@
     components: { BasicDrawer, BasicForm },
 
     setup() {
+
+
       const [registerForm, { setFieldsValue }] = useForm({
         labelWidth: 120,
         schemas,
@@ -132,8 +135,11 @@
           field1: data.info,
         });
       });
-
-      return { register, closeDrawer, schemas, registerForm };
+const success = () => {
+    closeDrawer();
+      message.success('This is a prompt message for success, and it will disappear in 10 seconds', 10);
+    };
+      return { register, closeDrawer, schemas, registerForm ,success};
     },
   });
 </script>
