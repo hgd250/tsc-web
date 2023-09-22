@@ -47,19 +47,12 @@
                 '0%': '#108ee9',
                 '100%': '#87d068',
               }"
-              :percent="1"
+              :percent="33"
             />
           </a-layout-sider>
         </a-layout>
         <a-layout-footer :style="footerStyle">
-
-          cp  public/favicon.ico  ../new/tsc-web/public
-          cp  public/logo.png  ../new/tsc-web/public/logo.png
-          cp  src/assets/images/logo.png  ../new/tsc-web/src/assets/images/logo.png
-          cp  src/router/routes/modules/dashboard.ts  ../new/tsc-web/src/router/routes/modules/dashboard.ts
-          cp  src/views/dashboard/analysis/account/center/status.vue  ../new/tsc-web/src/views/dashboard/analysis/account/center/status.vue
-          cp  src/views/dashboard/analysis/account/center/test  ../new/tsc-web/src/views/dashboard/analysis/account/center/test
-
+          
           <Steps :current="0" progress-dot size="large">
             <Step title="Join">
               <template #description>
@@ -68,7 +61,7 @@
             </Step>
             <Step title="Job Training">
               <template #description>
-<!--                <p>2016-11-22 12:32</p>-->
+                <p>2016-11-22 12:32</p>
                 <p>Planned</p>
 
               </template>
