@@ -44,7 +44,7 @@
                 '0%': '#108ee9',
                 '100%': '#87d068',
               }"
-              :percent="33"
+              :percent="100"
             />
           </a-layout-sider>
         </a-layout>
@@ -52,7 +52,7 @@
 
 
 
-          <Steps :current="1" progress-dot size="large">
+          <Steps :current="3" progress-dot size="large">
             <Step title="Join">
               <template #description>
                 <p>2016-10-24 12:32</p>
@@ -67,14 +67,14 @@
             </Step>
             <Step title="Health" >
               <template #description>
-<!--                <p>2017-01-20 15:30</p>-->
+                <p>2017-01-26 15:30</p>
                <p>Planned</p>
 
               </template>
             </Step>
             <Step title="Completed" >
               <template #description>
-<!--                <p>2017-01-30</p>-->
+                <p>2017-05-25 15:30</p>
               </template>
             </Step>
           </Steps>
@@ -83,71 +83,75 @@
 
     </a-space>
 
+    <a-page-header
+      style="border: 1px solid rgb(235, 237, 240)"
+      title="Message Center"
+    />
 
 
 <!--comments-->
-<!--    <a-comment>-->
-<!--      <template #actions>-->
-<!--        <span key="comment-nested-reply-to">Reply to</span>-->
-<!--      </template>-->
-<!--      <template #author>-->
-<!--        <a>Johns</a>-->
-<!--      </template>-->
-<!--      <template #avatar>-->
-<!--        <a-avatar src="https://tse3-mm.cn.bing.net/th/id/OIP-C.oIy82pW7avvLJcWByN5X1AAAAA?pid=ImgDet&rs=1" alt="John" />-->
-<!--      </template>-->
-<!--      <template #content>-->
-<!--        <p>-->
-<!--         I will never forget today in my life! i Got my home today! I feel really graceful. Thanks everyone who ever helped me! I never thought i could really got my own house! I could't get it withour your help! Thanks everyone!(From cellphone on 20170126)-->
-<!--        </p>-->
-<!--      </template>-->
-<!--      <a-comment>-->
-<!--        <template #author>-->
-<!--          <a>Delaware Heathy Center</a>-->
-<!--        </template>-->
-<!--        <template #avatar>-->
-<!--          <a-avatar src="https://ts1.cn.mm.bing.net/th/id/R-C.8909256c2f78c2ff828ceae7f28009ca?rik=T4TXSMZNXASm3Q&pid=ImgRaw&r=0" alt="Jxy" />-->
-<!--        </template>-->
-<!--        <template #content>-->
-<!--          <p>-->
-<!--            <a>@John</a>,<a>@TSC staff</a>, just a reminder that john need to come to our hospital for the treatment on 20170130(From PC on 20170126)-->
-<!--          </p>-->
-<!--        </template>-->
-<!--        <a-comment>-->
-<!--          <template #actions>-->
-<!--            <span>Reply to</span>-->
-<!--          </template>-->
-<!--          <template #author>-->
-<!--            <a>TSC Staff</a>-->
-<!--          </template>-->
-<!--          <template #avatar>-->
-<!--            <a-avatar src="https://ts1.cn.mm.bing.net/th/id/R-C.d04ab4b23b2e4b577f28bb38a5cdaf4e?rik=oV4iTAagIbE2CA&pid=ImgRaw&r=0" alt="Han Solo" />-->
-<!--          </template>-->
-<!--          <template #content>-->
-<!--            <p>-->
-<!--              Confirmed. (From cellphone on 20171126)-->
-<!--            </p>-->
-<!--          </template>-->
-<!--        </a-comment>-->
-<!--        <a-comment>-->
-<!--          <template #actions>-->
-<!--            <span>Reply to</span>-->
-<!--          </template>-->
-<!--          <template #author>-->
-<!--            <a>John</a>-->
-<!--          </template>-->
-<!--          <template #avatar>-->
-<!--            <a-avatar src="https://tse3-mm.cn.bing.net/th/id/OIP-C.oIy82pW7avvLJcWByN5X1AAAAA?pid=ImgDet&rs=1" alt="Han Solo" />-->
-<!--          </template>-->
-<!--          <template #content>-->
-<!--            <p>-->
-<!--              Confirmed. (From cellphone on 201711126)-->
-<!--            </p>-->
-<!--          </template>-->
+    <a-comment>
+      <template #actions>
+        <span key="comment-nested-reply-to">Reply to</span>
+      </template>
+      <template #author>
+        <a>Johns</a>
+      </template>
+      <template #avatar>
+        <a-avatar src="https://tse3-mm.cn.bing.net/th/id/OIP-C.oIy82pW7avvLJcWByN5X1AAAAA?pid=ImgDet&rs=1" alt="John" />
+      </template>
+      <template #content>
+        <p>
+         I will never forget today in my life! i Got my home today! I feel really graceful. Thanks everyone who ever helped me! I never thought i could really got my own house! I could't get it withour your help! Thanks everyone!(From cellphone on 20170525)
+        </p>
+      </template>
+      <a-comment>
+        <template #author>
+          <a>Delaware Heathy Center</a>
+        </template>
+        <template #avatar>
+          <a-avatar src="https://ts1.cn.mm.bing.net/th/id/R-C.8909256c2f78c2ff828ceae7f28009ca?rik=T4TXSMZNXASm3Q&pid=ImgRaw&r=0" alt="Jxy" />
+        </template>
+        <template #content>
+          <p>
+            <a>@John</a>,<a>@TSC staff</a>, just a reminder that john need to come to our hospital for the treatment on 20170130(From PC on 20170126)
+          </p>
+        </template>
+        <a-comment>
+          <template #actions>
+            <span>Reply to</span>
+          </template>
+          <template #author>
+            <a>TSC Staff</a>
+          </template>
+          <template #avatar>
+            <a-avatar src="https://ts1.cn.mm.bing.net/th/id/R-C.d04ab4b23b2e4b577f28bb38a5cdaf4e?rik=oV4iTAagIbE2CA&pid=ImgRaw&r=0" alt="Han Solo" />
+          </template>
+          <template #content>
+            <p>
+              Confirmed. (From cellphone on 20171126)
+            </p>
+          </template>
+        </a-comment>
+        <a-comment>
+          <template #actions>
+            <span>Reply to</span>
+          </template>
+          <template #author>
+            <a>John</a>
+          </template>
+          <template #avatar>
+            <a-avatar src="https://tse3-mm.cn.bing.net/th/id/OIP-C.oIy82pW7avvLJcWByN5X1AAAAA?pid=ImgDet&rs=1" alt="Han Solo" />
+          </template>
+          <template #content>
+            <p>
+              Confirmed. (From cellphone on 201711126)
+            </p>
+          </template>
 
-<!--        </a-comment>-->
-<!--      </a-comment>-->
-<!--    </a-comment>-->
+        </a-comment>
+      </a-comment>
+    </a-comment>
 <!--3 end-->
 <!-- 2 -->
     <a-comment>
@@ -212,12 +216,6 @@
       </a-comment>
     </a-comment>
 <!--2 end -->
-      <a-page-header
-        style="border: 1px solid rgb(235, 237, 240)"
-        title="Message Center"
-      />
-
-
 
     <a-comment >
       <template #actions>
